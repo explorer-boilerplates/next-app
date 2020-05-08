@@ -16,11 +16,18 @@
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "husky": "^4.2.5",
-    "lint-staged": "^10.2.2"
+    "lint-staged": "^10.2.2",
+    "prettier": "^2.0.5"
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "./**/*.{js,jsx,ts,tsx,md,mdx,json}": [
+      "prettier --write ."
+    ]
   }
 }
