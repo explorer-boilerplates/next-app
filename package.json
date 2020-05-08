@@ -42,7 +42,8 @@
     "lint-staged": "^10.2.2",
     "prettier": "^2.0.5",
     "twin.macro": "^1.0.0-alpha.10",
-    "typescript": "^3.8.3"
+    "typescript": "^3.8.3",
+    "typescript-plugin-tw-template": "^2.0.1"
   },
   "husky": {
     "hooks": {

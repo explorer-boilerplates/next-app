@@ -7539,6 +7539,19 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
+typescript-plugin-tw-template@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/typescript-plugin-tw-template/-/typescript-plugin-tw-template-2.0.1.tgz#9cebbebacd8dfce2ba718a8251ba9f6acf8e73e1"
+  integrity sha512-tSBw0sxRbeznPZSS69jKeVA9juaDs9tgFcp3ORvdvavm08+x8vnay04cH2U31f7F/Woy80XekbfLc8gDLrVqdw==
+  dependencies:
+    postcss "^7.0.27"
+    typescript-template-language-service-decorator "^2.2.0"
+
+typescript-template-language-service-decorator@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/typescript-template-language-service-decorator/-/typescript-template-language-service-decorator-2.2.0.tgz#4ee6d580f307fb9239978e69626f2775b8a59b2a"
+  integrity sha512-xiolqt1i7e22rpqMaprPgSFVgU64u3b9n6EJlAaUYE61jumipKAdI1+O5khPlWslpTUj80YzjUKjJ2jxT0D74w==
+
 typescript@^3.8.3:
   version "3.8.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.8.3.tgz#409eb8544ea0335711205869ec458ab109ee1061"
