@@ -65,11 +65,11 @@
     }
   },
   "lint-staged": {
-    "./**/*.{js,jsx,ts,tsx,md,mdx}": [
+    "./**/*.{js,jsx,ts,tsx}": [
       "prettier --write .",
       "eslint --fix --max-warnings=0 ."
     ],
-    "./**/*.json": [
+    "./**/*.{json,md,mdx}": [
       "prettier --write ."
     ]
   },
