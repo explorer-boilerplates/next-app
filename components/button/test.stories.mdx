@@ -1,0 +1,18 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { Button } from "./button";
+
+<Meta title="Components|Test" component={Button} />
+
+Here's some _markdown_!
+
+# Preview
+
+<Preview>
+  <Story name="button" args={{ label: "hiya" }}>
+    {(args) => <Button {...args} />}
+  </Story>
+</Preview>
+
+# Props
+
+<Props story="button" />
