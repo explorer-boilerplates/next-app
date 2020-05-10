@@ -6,7 +6,7 @@
     "allowSyntheticDefaultImports": true,
     "target": "es5",
     "lib": ["es5", "dom"],
-    "types": ["cypress", "cypress-axe", "cypress-react-unit-test"],
+    "types": ["cypress", "cypress-react-unit-test"],
     "paths": {
       "@components/*": ["src/components/*"]
     }
