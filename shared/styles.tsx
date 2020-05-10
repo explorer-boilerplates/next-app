@@ -55,6 +55,7 @@ export const Combined = styled("div")`
   ${hoverStyles};
   & code {
     background-color: black;
+    color: white;
   }
 `;
 
