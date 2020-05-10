@@ -17,11 +17,17 @@
     "noUnusedLocals": true /* Report errors on unused locals. */,
     "noImplicitReturns": true /* Report error when not all code paths in function return a value. */,
     "noFallthroughCasesInSwitch": true /* Report errors for fallthrough cases in switch statement. */,
+    "baseUrl": ".",
     "plugins": [
       {
         "name": "typescript-plugin-tw-template"
       }
-    ]
+    ],
+    "paths": {
+      "@components/*": ["components/*"],
+      "@pages/*": ["src/pages/*"],
+      "@design/*": ["design-system/*"]
+    }
   },
   "exclude": ["node_modules"],
   "include": [
