@@ -8,7 +8,7 @@ export const globalStyles = (
       body {
         padding: 3rem 1rem;
         margin: 0;
-        background: papayawhip;
+        background: #dddddd;
         min-height: 100%;
         font-family: Helvetica, Arial, sans-serif;
         font-size: 24px;
@@ -19,11 +19,11 @@ export const globalStyles = (
 
 export const basicStyles = css`
   background-color: white;
-  color: cornflowerblue;
-  border: 1px solid lightgreen;
+  color: black;
+  /* border: 1px solid lightgreen; */
   border-right: none;
   border-bottom: none;
-  box-shadow: 5px 5px 0 0 lightgreen, 10px 10px 0 0 lightyellow;
+  /* box-shadow: 5px 5px 0 0 lightgreen, 10px 10px 0 0 lightyellow; */
   transition: all 0.1s linear;
   margin: 3rem 0;
   padding: 1rem 0.5rem;
@@ -32,7 +32,7 @@ export const basicStyles = css`
 export const hoverStyles = css`
   &:hover {
     color: white;
-    background-color: lightgray;
+    background-color: black;
     border-color: aqua;
     box-shadow: -15px -15px 0 0 aqua, -30px -30px 0 0 cornflowerblue;
   }
@@ -54,7 +54,7 @@ export const Combined = styled("div")`
   ${basicStyles};
   ${hoverStyles};
   & code {
-    background-color: linen;
+    background-color: black;
   }
 `;
 
