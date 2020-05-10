@@ -7,7 +7,13 @@
     "build": "next build",
     "start": "next start",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run-unit": "cypress run --spec \"./components/**/*\"",
+    "test:unit": "start-server-and-test dev http://localhost:3000 cy:run-unit",
+    "test:e2e": "start-server-and-test dev http://localhost:3000 cy:open",
+    "test:e2e:ci": "start-server-and-test dev http://localhost:3000 cy:run"
   },
   "dependencies": {
     "@emotion/core": "^10.0.28",
@@ -15,6 +21,7 @@
     "emotion": "^10.0.27",
     "emotion-server": "^10.0.27",
     "next": "9.3.6",
+    "ramda": "^0.27.0",
     "react": "16.13.1",
     "react-dom": "16.13.1"
   },
@@ -22,6 +29,8 @@
     "@babel/core": "^7.9.6",
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
+    "@cypress/code-coverage": "^3.7.2",
+    "@cypress/webpack-preprocessor": "^5.2.0",
     "@emotion/babel-preset-css-prop": "^10.0.27",
     "@storybook/addon-a11y": "^6.0.0-beta.4",
     "@storybook/addon-actions": "^6.0.0-beta.4",
@@ -32,12 +41,18 @@
     "@storybook/addons": "^6.0.0-beta.4",
     "@storybook/preset-typescript": "^3.0.0",
     "@storybook/react": "^6.0.0-beta.4",
+    "@types/cypress-axe": "^0.4.0",
     "@types/node": "^13.13.5",
+    "@types/ramda": "^0.27.4",
     "@types/react": "^16.9.34",
     "@typescript-eslint/eslint-plugin": "^2.31.0",
     "@typescript-eslint/parser": "^2.31.0",
     "babel-loader": "^8.1.0",
+    "babel-plugin-istanbul": "^6.0.0",
     "babel-plugin-macros": "^2.8.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "cypress": "^4.5.0",
+    "cypress-react-unit-test": "^4.2.1",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-typescript": "^7.2.1",
     "eslint-config-prettier": "^6.11.0",
@@ -52,8 +67,11 @@
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-unicorn": "^19.0.1",
     "husky": "^4.2.5",
+    "istanbul-lib-coverage": "^3.0.0",
     "lint-staged": "^10.2.2",
+    "nyc": "^15.0.1",
     "prettier": "^2.0.5",
+    "start-server-and-test": "^1.11.0",
     "twin.macro": "^1.0.0-alpha.10",
     "typescript": "^3.8.3",
     "typescript-plugin-tw-template": "^2.0.1"
@@ -65,7 +83,7 @@
     }
   },
   "lint-staged": {
-    "./**/*.{js,jsx,ts,tsx}": [
+    "./**/!(.eslintrc.js).{js,jsx,ts,tsx}": [
       "prettier --write .",
       "eslint --fix --max-warnings=0 ."
     ],
@@ -81,5 +99,10 @@
       "hasSuggestions": true,
       "debug": false
     }
+  },
+  "nyc": {
+    "exclude": [
+      "pages/api/__coverage__.js"
+    ]
   }
 }
