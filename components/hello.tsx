@@ -9,7 +9,7 @@ const HelloWorld: NextComponentType<HelloWorldProps> = () => {
   return (
     <div
       css={css`
-        ${tw`w-10 h-10 text-teal-600 bg-gray-200`}
+        ${tw`w-10 h-10 text-black bg-gray-200`}
       `}
     >
       Hello
