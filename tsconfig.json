@@ -25,8 +25,9 @@
     ],
     "paths": {
       "@components/*": ["components/*"],
-      "@pages/*": ["src/pages/*"],
-      "@design/*": ["design-system/*"]
+      "@pages/*": ["pages/*"],
+      "@design/*": ["design-system/*"],
+      "@styles/*": ["styles/*"]
     }
   },
   "exclude": ["node_modules"],
