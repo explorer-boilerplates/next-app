@@ -1,3 +1,6 @@
+import { css } from "@emotion/core";
+// eslint-disable-next-line import/no-extraneous-dependencies
+import tw from "twin.macro";
 import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
 import { Button } from "./button";
 
@@ -10,6 +13,16 @@ Here's some _markdown_!
 <Preview>
   <Story name="button" args={{ label: "hiya" }}>
     {(args) => <Button {...args} />}
+  </Story>
+  <Story name="button2" args={{ label: "elo" }}>
+    {(args) => (
+      <Button
+        css={css`
+          ${tw`text-teal-300`}
+        `}
+        {...args}
+      />
+    )}
   </Story>
 </Preview>
 
