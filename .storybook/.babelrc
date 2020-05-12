@@ -1,0 +1,5 @@
+// You need this file because of this: https://github.com/emotion-js/emotion/issues/1306#issuecomment-486761929
+{
+  "presets": ["@emotion/babel-preset-css-prop"],
+  "plugins": ["babel-plugin-macros"]
+}
