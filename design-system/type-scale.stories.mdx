@@ -69,15 +69,10 @@ Here the text should fill nicely to the element hierarchy. You want to provide a
 
 ## Make Types Responsive
 
-We can distinguish 3 different approaches when preparing type scale for different device widths.
+### Default - Just Increace your type scale by one.
 
-### First Approach - Do nothing
-
-In the first approach you don't change type scale across your breakpoints. Without scaling your typography to different breakpoints your headings may be too small for large screens or too big for smaller screens. Usually you would want to adjust your scale to the device your user is using.
-
-### Second Approach - Just Increace your type scale by one.
-
-In this approach you just increace your type scale by one for every breakpoint (or only for some breakpoints). For example. Let's say you are using Major Second (1.125) breakpoint.
+The simplest way to adjust your font size for different screens is to go one level up or down in your typography hierarchy.
+You should apply changes when you notice that the font is too small or to large for your breakpoint. It's not necessary to adjust font size on every breakpoint.
 
 Your base font size is 16px. You can multiply every breakpoint by 1.125 so you would get:
 
@@ -99,7 +94,7 @@ Your base font size is 16px. You can multiply every breakpoint by 1.125 so you w
 | ------- | ------- | ------- | ------- | ------- | ------- | ------- |
 | 20.25px | 22.78px | 25.63px | 28.83px | 32.44px | 36.49px | 41.05px |
 
-### Third Approach - use different type scale.
+### Custom - use different type scale.
 
 You could also increace your type scale by some other ratio. You could for example have (1.125) ratio for your type scale but you would increace your scale by (1.333) on every breakpoint.
 
@@ -107,9 +102,23 @@ You could also increace your type scale by some other ratio. You could for examp
 
 The situation presented here are just an example. You can allow yourself for a lot of flexibility when it comes to making your type system responsive. An important rule to take out from this is to **remember to try to adjust your font-size between elements in your hierarchy but also between different breakpoints**. The general approach for this system will be to try to go up or down one level in hierarchy when contrast between elements is too small or too large.
 
+## Type Scale to consider
+
+- **Minor Second (16:15)**
+- **Major Second (9:8)**
+- **Minor Third (6:5)**
+- **Major Third (5:4)**
+- **Perfect Fourth (4:3)**
+- **Augmented Fourth (1.414)**
+- **Perfect Fifth (1.500)**
+- **Minor Sixth (1.6)**
+- **Golden Ratio (1.618)**
+
+Using higher ratios won't be useful for web development. Font sizes would end up being way too big. So try to stick with those or mix them to create consistent experiance.
+
 ---
 
-Special thanks for the creators of this articles. This section was inspired by them:
+This section was based on:
 
 [Responsive Type Scales](https://medium.com/sketch-app-sources/exploring-responsive-type-scales-cf1da541be54)
 
