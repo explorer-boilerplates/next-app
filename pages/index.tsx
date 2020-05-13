@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import { Basic, Combined, Animated, bounce } from "../shared/styles";
+import { Basic, Combined, Animated, bounce } from "@styles/styles";
 import HelloWorld from "../components/hello";
 
 const Home: NextPage = () => (
