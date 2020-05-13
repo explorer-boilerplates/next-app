@@ -4,6 +4,7 @@ import { addDecorator, addParameters } from "@storybook/react";
 
 // eslint-disable-next-line import/no-extraneous-dependencies
 import "@storybook/addon-console";
+import globalStyles from "../styles/global-styles";
 
 // When you have problem with displaying tabs inside storybook interface:
 //  https://github.com/storybookjs/storybook/issues/8383#issuecomment-541562349 - localStorage.clear() and reload the page
@@ -128,7 +129,12 @@ addParameters({
   actions: { argTypesRegex: "^on.*" },
 });
 
-addDecorator((storyFn) => <>{storyFn()}</>);
+addDecorator((storyFn) => (
+  <>
+    {globalStyles}
+    {storyFn()}
+  </>
+));
 
 // options: {
 //     storySort: (a, b) =>
