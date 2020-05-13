@@ -1,0 +1,74 @@
+import { css } from "@emotion/core";
+// eslint-disable-next-line import/no-extraneous-dependencies
+import tw from "twin.macro";
+import { Meta } from "@storybook/addon-docs/blocks";
+import {
+  H1,
+  H2,
+  H3,
+  H4,
+  H5,
+  H6,
+  Subtitle1,
+  Subtitle2,
+  Body1,
+  Body2,
+  Button,
+  Caption,
+  Overline,
+} from "./typography.stories.tsx";
+
+<Meta title="Design System|Typography" />
+
+# Type System
+
+For type scale I used Material Design type scale generator.
+
+It generates combination of 13 styles that are optimized for readibility.
+
+To comunicate hierarchy between elements we use:
+
+- font weight
+- size
+- letter spacing
+- letter case
+- color (optional. This should not be used method to signal hierarchy or at least shouldn't be the only method because of a11y)
+
+## Roboto Type Scale
+
+<H1 />
+<H2 />
+<H3 />
+<H4 />
+<H5 />
+<H6 />
+<Subtitle1 />
+<Subtitle2 />
+<Body1 />
+<Body2 />
+<Button />
+<Caption />
+<Overline />
+
+---
+
+**Note:**
+
+It's worthy to note that ratios used in Material Design are not fixed. Actually it looks like the combination of several scales. But every scale fit perfectly in one of the popular category.
+
+Let's look at the examples. (Here I use Example Roboto scale from their website).
+
+|                | h1 / h2      | h2 / h3     | h3 / h4          | h4 / h5          | h5 / h6     |
+| -------------- | ------------ | ----------- | ---------------- | ---------------- | ----------- |
+| **Ratio**      | 1.6          | 1.25        | 1.41             | 1.41             | 1.2         |
+| **Scale Type** | Golden Ratio | Major Third | Augmented Fourth | Augmented Fourth | Minor Third |
+
+As you can see the type scale follows strictly one of the popular aspect ratios on every step. Moreover, when the difference between aspect ratios is small (1.25 or 1.2) the font weight of the elements increase. Depending on the structure they change font size a little bit but in general they follow exactly the same principles.
+
+**Letter Spacing**
+
+Letter spacing is always the same no matter what type of fonts from Google Fonts you choose from. It may not be intended but you can clearly see the pattern here -
+
+1. **for bigger fonts you want to have tighter leading**.
+2. Opposite is also true - **for smaller fonts you want to have looser leading**.
+3. **The widest letter spacing should be applied for small uppercase sizes**.
