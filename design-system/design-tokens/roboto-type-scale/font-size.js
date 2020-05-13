@@ -1,0 +1,15 @@
+module.exports = {
+  "heading-1": "6rem",
+  "heading-2": "3.75rem",
+  "heading-3": "3rem",
+  "heading-4": "2.125rem",
+  "heading-5": "1.5rem",
+  "heading-6": "1.25rem",
+  "subtitle-1": "1rem",
+  "subtitle-2": "0.875rem",
+  "body-1": "1rem",
+  "body-2": "0.875rem",
+  button: "0.875rem",
+  caption: "0.75rem",
+  overline: "0.625rem",
+};
