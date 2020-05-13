@@ -65,10 +65,59 @@ Let's look at the examples. (Here I use Example Roboto scale from their website)
 
 As you can see the type scale follows strictly one of the popular aspect ratios on every step. Moreover, when the difference between aspect ratios is small (1.25 or 1.2) the font weight of the elements increase. Depending on the structure they change font size a little bit but in general they follow exactly the same principles.
 
-**Letter Spacing**
+**Letter Spacing (Tracking)**
 
 Letter spacing is always the same no matter what type of fonts from Google Fonts you choose from. It may not be intended but you can clearly see the pattern here -
 
-1. **for bigger fonts you want to have tighter leading**.
-2. Opposite is also true - **for smaller fonts you want to have looser leading**.
+1. **for bigger fonts you want to have tighter tracking**.
+2. Opposite is also true - **for smaller fonts you want to have looser tracking**.
 3. **The widest letter spacing should be applied for small uppercase sizes**.
+
+## Applying Type Scale
+
+This paragraph will go through general rules when applying the type scale.
+
+### Headlines
+
+Headlines are largest text on the screen. Remember to use it only for short texts (**max - one sentence**).
+
+Headlines are used to attract people's attention - so you can **allow yourself for more expressive and unconventional style.**
+
+### Subtitles
+
+Use them for medium emphasis. It means **smaller and less expressive fonts than headlines.**
+
+### Body
+
+For body text we have create two versions. Use it for long-form texts. Main focus is **readability**. **Use only serif or sans serif fonts.**
+
+### Caption and Overline
+
+The smallest font sizes. Use them to annotate imagery or introduce a headline.
+
+### Button
+
+Buttons are used to signal for the user to take an action. Using uppercase on actionable elements that user can click may create a better user experience (all caps is associated with screaming - so the message may seem more energetic to the user? [Just a guess] ).
+We only use all caps for really small font sizes to annotate some additional info. So all caps create nice emphasis for our user to take an action.
+
+Of course we shouldn't use all caps for links inside a pragraph. It would be bad for readability.
+For links inside paragraphs we would like to use underline or a different color (remember about a11y - just color may not be enough).
+
+## Understand line-height
+
+Line height is very important for text readability. Line height is commonly measured as a percentage of font size (so it's relative to it). Usually line-height acceptable range is **120-200%**.
+
+**Note:**
+
+- **Aim for 140-180% to achieve optimal readability** - use less than minimal the text will be cramped. Use more than maximum - reader's eye may get lost when switching the line.
+- **Limit line length to 40-80 characters** - longer lines confuse reader. Generally text on screens should be shorter than text in books etc. When using longer lines increace line spacing.
+- **Font size should be minimum 14px** - usually it's more than that but never go lower than 14px for long texts.
+- **Smaller font need more spacing**
+- **When you change font families remember to adjust other parameters** - different fonts have different (x-heights) even when they are the same size. So when you change fonts remember to adjust other parameters like (line-height, letter-spacing etc.).
+
+---
+
+This section was based on:
+
+[Material Design Typography](https://material.io/design/typography/the-type-system.html#applying-the-type-scale)
+[Line Spacing Best Practices](https://www.justinmind.com/blog/best-ux-practices-for-line-spacing/)
