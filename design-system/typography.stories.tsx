@@ -89,7 +89,7 @@ export const Body1 = (): ReactNode => (
     </p>
     <p
       css={css`
-        ${tw`font-sans body-1`}
+        ${tw`font-sans leading-normal body-1`}
       `}
     >
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
@@ -98,6 +98,15 @@ export const Body1 = (): ReactNode => (
       quibusdam iure nihil, quasi voluptatem. Aliquid enim facilis quia labore,
       quisquam vitae! Ex, illo ratione harum nam est beatae esse modi reiciendis
       non incidunt?
+    </p>
+    <p
+      css={css`
+        ${tw`font-sans leading-normal body-1`}
+      `}
+    >
+      It&apos;s worthy to note that ratios used in Material Design are not
+      fixed. Actually it looks like the combination of several scales. But every
+      scale fit perfectly in one of the popular category.
     </p>
   </>
 );
@@ -112,7 +121,7 @@ export const Body2 = (): ReactNode => (
     </p>
     <p
       css={css`
-        ${tw`font-sans body-2`}
+        ${tw`font-sans leading-relaxed body-2`}
       `}
     >
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
