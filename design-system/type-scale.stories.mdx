@@ -1,0 +1,120 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+
+<Meta title="Design System|Type Scale - Theory" />
+
+# Type Scale
+
+When building web apps, especially when there is no designer in a team, our type scale can become a mess. We often make decisions about how our typography looks like based on an impulse ("Looks good to me.") or a guesswork. This can lead to a lot of inconsistencies in our design. We should aim for creating hierarchy that works together well. That's why it's a good idea to create a type scale - a set of fixed type sizes. A type scale should **fit well in design language and be responsive across device sizes.** Sticking to a scale limits your choices (which is good because there's too much of them and you won't be using all of the font-sizes, font-weights etc. anyway) and helps you avoid design errors.
+
+## Types of scales
+
+When we want to create a harmonious type scale we need to choose what type of ratios we want to have between our type levels.
+There are plenty of choices. Here's a small list of examples:
+
+- Major Third
+- Major Second
+- Perfect Fourth
+- Golden Ratio
+- Perfect Fifth
+
+Let's take a **Perfect Fourth Scale (1.333)** as an example:
+
+| P          | H6          | H5             | H4             | H3            | H2             | H1             |
+| ---------- | ----------- | -------------- | -------------- | ------------- | -------------- | -------------- |
+| 16px       | 21.33px     | 28.43px        | 37.90px        | 50.52px       | 67.34px        | 89.76px        |
+| Base value | 16 \* 1.333 | 21.33 \* 1.333 | 28.43 \* 1.333 | 37.9 \* 1.333 | 50.52 \* 1.333 | 67.34 \* 1.333 |
+
+This is the math behind creating 1.333 ratio type scale.
+
+**Major Second Scale (1.125)**:
+
+| P    | H6   | H5      | H4      | H3      | H2      | H1      |
+| ---- | ---- | ------- | ------- | ------- | ------- | ------- |
+| 16px | 18px | 20.25px | 22.78px | 25.63px | 28.83px | 32.44px |
+
+**Augmented Fourth (1.414)**:
+
+| P    | H6      | H5      | H4      | H3      | H2      | H1       |
+| ---- | ------- | ------- | ------- | ------- | ------- | -------- |
+| 16px | 22.62px | 31.99px | 45.23px | 63.96px | 90.44px | 127.88px |
+
+### Scale Conclusions
+
+As you can see even a relatively small difference between examples above (0.289) can add up and lead to very big differences at the final levels of your type scale **(32.44px vs 127.88px)**.
+
+**Note:**
+The decimals are left there on purpose. It's not possible to reach a pixel perfect results with all the available ratios. In practice you need to round these values up or down.
+
+## Types of websites
+
+For typographic purposes we can divide websites into three general categories:
+
+- **Marketing Site**
+- **Blog / Information Site**
+- **Product Site**
+
+For each of this type of websites we want to use different proportions. It's natural because this sites serve different purposes. So what are the differences between those three?
+
+### Marketing sites
+
+With marketing sites we want to acheive a high level of contrast between the type levels. You want to focus user attention on specific part of the website.
+
+### Blog/ Info Sites
+
+Here we should aim for medium type ratio. Usually on this type of sites we have much more content. We want to provide nice structure for it, but we don't want the page to be too long. That's why we try to reduce the amount of space and a difference in size is smaller comapred to marketing sites.
+
+### Product Sites
+
+Here the text should fill nicely to the element hierarchy. You want to provide a good user experiance and help users to get something done. The text is just the addition to help them find what they want. In order to do that you want to have a flexible type scale. You want to keep ratio range low.
+
+## Make Types Responsive
+
+We can distinguish 3 different approaches when preparing type scale for different device widths.
+
+### First Approach - Do nothing
+
+In the first approach you don't change type scale across your breakpoints. Without scaling your typography to different breakpoints your headings may be too small for large screens or too big for smaller screens. Usually you would want to adjust your scale to the device your user is using.
+
+### Second Approach - Just Increace your type scale by one.
+
+In this approach you just increace your type scale by one for every breakpoint (or only for some breakpoints). For example. Let's say you are using Major Second (1.125) breakpoint.
+
+Your base font size is 16px. You can multiply every breakpoint by 1.125 so you would get:
+
+**Normal**
+
+| P    | H6   | H5      | H4      | H3      | H2      | H1      |
+| ---- | ---- | ------- | ------- | ------- | ------- | ------- |
+| 16px | 18px | 20.25px | 22.78px | 25.63px | 28.83px | 32.44px |
+
+**Medium**
+
+| P    | H6      | H5      | H4      | H3      | H2      | H1      |
+| ---- | ------- | ------- | ------- | ------- | ------- | ------- |
+| 18px | 20.25px | 22.78px | 25.63px | 28.83px | 32.44px | 36.49px |
+
+**Large**
+
+| P       | H6      | H5      | H4      | H3      | H2      | H1      |
+| ------- | ------- | ------- | ------- | ------- | ------- | ------- |
+| 20.25px | 22.78px | 25.63px | 28.83px | 32.44px | 36.49px | 41.05px |
+
+### Third Approach - use different type scale.
+
+You could also increace your type scale by some other ratio. You could for example have (1.125) ratio for your type scale but you would increace your scale by (1.333) on every breakpoint.
+
+**Note:**
+
+The situation presented here are just an example. You can allow yourself for a lot of flexibility when it comes to making your type system responsive. An important rule to take out from this is to **remember to try to adjust your font-size between elements in your hierarchy but also between different breakpoints**. The general approach for this system will be to try to go up or down one level in hierarchy when contrast between elements is too small or too large.
+
+---
+
+Special thanks for the creators of this articles. This section was inspired by them:
+
+[Responsive Type Scales](https://medium.com/sketch-app-sources/exploring-responsive-type-scales-cf1da541be54)
+
+[Defining a modular Type Scale](https://blog.prototypr.io/defining-a-modular-type-scale-for-web-ui-51acd5df31aa)
+
+[Type Scale](https://type-scale.com/)
+
+[Modular Scale](https://www.modularscale.com/)
