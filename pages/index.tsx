@@ -3,6 +3,7 @@ import { Basic, Combined, Animated, bounce } from "@styles/styles";
 import { css } from "@emotion/core";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import tw from "twin.macro";
+import Icon from "@svg/icon-arrow-left.svg";
 import HelloWorld from "../components/hello";
 
 const Home: NextPage = () => (
@@ -14,6 +15,11 @@ const Home: NextPage = () => (
     >
       This is the heading
     </h1>
+    <Icon
+      css={css`
+        ${tw`w-8 h-8`}
+      `}
+    />
     <Basic>Cool Styles</Basic>
     <Combined>
       With <code>:hover</code>.
