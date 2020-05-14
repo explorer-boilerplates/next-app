@@ -27,7 +27,8 @@
       "@components/*": ["components/*"],
       "@pages/*": ["pages/*"],
       "@design/*": ["design-system/*"],
-      "@styles/*": ["styles/*"]
+      "@styles/*": ["styles/*"],
+      "@svg/*": ["public/svg/*"]
     }
   },
   "exclude": ["node_modules"],
