@@ -41,6 +41,7 @@
     "@storybook/addons": "^6.0.0-beta.4",
     "@storybook/preset-typescript": "^3.0.0",
     "@storybook/react": "^6.0.0-beta.4",
+    "@svgr/webpack": "^5.4.0",
     "@types/cypress-axe": "^0.4.0",
     "@types/node": "^13.13.5",
     "@types/ramda": "^0.27.4",
