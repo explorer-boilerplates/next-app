@@ -15,6 +15,7 @@ module.exports = {
     "eslint:recommended",
     "plugin:eslint-comments/recommended",
     "plugin:ramda/recommended",
+    "plugin:unicorn/recommended",
     "plugin:prettier/recommended",
     "prettier/react",
     "prettier/@typescript-eslint",
