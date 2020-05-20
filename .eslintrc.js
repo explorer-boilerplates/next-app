@@ -35,6 +35,7 @@ module.exports = {
     "react/jsx-filename-extension": "off",
     "jsx-a11y/label-has-associated-control": "off",
     "react/react-in-jsx-scope": "off",
+    "unicorn/prevent-abbreviations": "off",
   },
   overrides: [
     {
