@@ -1,7 +1,5 @@
 import { keyframes, css } from "@emotion/core";
 
-import styled from "@emotion/styled";
-
 export const basicStyles = css`
   background-color: white;
   color: black;
@@ -29,31 +27,4 @@ export const bounce = keyframes`
   to {
     transform: scale(0.99);
   }
-`;
-
-export const Basic = styled("div")`
-  ${basicStyles};
-`;
-
-export const Combined = styled("div")`
-  ${basicStyles};
-  ${hoverStyles};
-  & code {
-    background-color: black;
-    color: white;
-  }
-`;
-
-type AnimatedProps = {
-  animation: string;
-};
-
-export const Animated = styled("div")<AnimatedProps>`
-  ${basicStyles};
-  ${hoverStyles};
-  & code {
-    background-color: linen;
-  }
-  animation: ${(props): string => props.animation} 0.2s infinite ease-in-out
-    alternate;
 `;
